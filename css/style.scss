@@ -1,0 +1,52 @@
+img { width:100%;height:auto; }
+
+header {
+    background-image: url(../assets/img/Pizza-mockup-wide.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    transition: all .5s;
+    
+    padding: 10vh 0;
+    
+    #logo {
+        padding: 0 25vh;
+    }
+    .row .col { 
+        margin:0;padding:0;
+    }
+    
+    &:hover {
+        background-image: url(../assets/img/Pizza-mockup-wide-01.png);
+    }
+    
+}
+
+
+main {
+
+    min-height: 200vh;
+    
+    #value {
+        background-color:#0c1920;
+    }
+    
+    section {
+        
+        .row .col { 
+            margin:0;padding:0;
+        }
+        h2 {
+            background-color:#0c1920;
+            padding: 2vh;
+            margin: 0;
+            font-size:22px;
+            font-weight: 900;
+            text-align: center;
+            color:#f5f6fa;
+        }
+        
+    }
+    
+}
