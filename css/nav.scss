@@ -3,14 +3,14 @@ $darkBlue: #208FF9;
 
 
 /* MAIN VARIABLES FOR CUSTOMIZATION */
-$numOfItems: 4;
+$numOfItems: 3;
 $navAT: 1s;
 $textDelayStep: 0.1s;
 /* -------------------------------- */
 
 $font: Helvetica, Arial, sans-serif;
 
-$btnSize: 90px;
+$btnSize: 80px;
 $lineW: 28px;
 $lineH: 4px;
 $linesGap: 10px;
@@ -19,9 +19,9 @@ $btnHorPad: ($btnSize - $lineW) / 2;
 $btnVertPad: ($btnSize - $linesTotalH) / 2;
 
 
-$itemsLeftPad: 20px;
+$itemsLeftPad: 10px;
 $itemsRightPad: $itemsLeftPad + $btnSize;
-$itemWidth: 70px;
+$itemWidth: 60px;
 $navItemsWidth: $itemsLeftPad + $itemsRightPad + $itemWidth * $numOfItems;
 
 $textAT: $navAT - $textDelayStep * ($numOfItems - 1);
