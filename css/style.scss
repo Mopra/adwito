@@ -178,16 +178,38 @@ main {
     
 }
 
-footer {
-    background: #0c1920;
-    padding:10vh 0;
-    
 
+footer {
+   color:#cfd8dc;padding:50px 0 50px 0;min-height:30vh;background-color:#0c1920;
 }
-.footer-copyright {
-    padding:40px 0;
-    background: #081115;
-    color: #f5f6fa;
+footer h3 {
+    color:#eceff1;font-size:1em
+}
+footer a, footer p {
+    color:#78909c;font-size:0.8em;transition:all .3s;margin: 3px 0;
+}
+footer a:hover{color:#eceff1
+}
+footer .copyright {
+    color:#455a64;margin:25px 0
+}
+footer .copyright hr {
+    margin:25px 0;border:0;height:0;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(255,255,255,0.3)
+}
+footer .copyright h1 {
+    font-size:1em;margin:0;display:inline
+}
+footer .copyright a {
+    color:#455a64;font-size:1em
+}
+footer .copyright a:hover{
+    color:#fff
+}
+footer .row{
+    margin-bottom:0
+}
+footer .socialIcons{
+    font-size:2em
 }
 
 

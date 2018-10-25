@@ -3,7 +3,7 @@ $darkBlue: #208FF9;
 
 
 /* MAIN VARIABLES FOR CUSTOMIZATION */
-$numOfItems: 3;
+$numOfItems: 4;
 $navAT: 1s;
 $textDelayStep: 0.1s;
 /* -------------------------------- */
@@ -19,8 +19,8 @@ $btnHorPad: ($btnSize - $lineW) / 2;
 $btnVertPad: ($btnSize - $linesTotalH) / 2;
 
 
-$itemsLeftPad: 10px;
-$itemsRightPad: $itemsLeftPad + $btnSize;
+$itemsLeftPad: 20px;
+$itemsRightPad: $itemsLeftPad + 10px;
 $itemWidth: 80px;
 $navItemsWidth: $itemsLeftPad + $itemsRightPad + $itemWidth * $numOfItems;
 
@@ -29,6 +29,19 @@ $textFadeAT: 0.2s;
 $cub: cubic-bezier(.48,.43,.29,1.3);
 $backCub: cubic-bezier(0.49,-0.3,.68,1.23);
 $textCub: cubic-bezier(.48,.43,.7,2.5);
+
+//Overrides
+nav ul a {
+    color: #6C7784;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    font-size: 14px;
+    
+    &:hover {
+        background: none;
+    }
+}
 
 .nav {
 overflow: hidden;
@@ -43,6 +56,7 @@ background: #fff;
 border-radius: 5px;
 transform: translate3d(-50%,0,0);
 box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+
     
 @media (max-width:600px) {
     
@@ -82,7 +96,7 @@ font-size: 0;
 &__item {
 display: inline-block;
 vertical-align: top;
-width: $itemWidth;
+width: auto;
 text-align: center;
 color: #6C7784;
 font-size: 14px;
@@ -92,9 +106,11 @@ font-weight: bold;
 perspective: 1000px;
 transition: color 0.3s;
 cursor: pointer;
+padding: 0 5px;
 
 &:hover {
 color: $lightBlue;
+background: rgba(108, 119, 132, 0.04);
 }
 
 &-text {
