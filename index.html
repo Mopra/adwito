@@ -37,7 +37,7 @@
 </header>
 <main>
     
-    <section id="value">
+    <section id="value" class="scrollspy">
         <div class="container">
             <div class="row">      
                 <div class="col s12 m4"><h2>BILLIGST</h2></div>
@@ -47,7 +47,7 @@
         </div>
     </section>
     
-    <section id="proposition">
+    <section id="proposition" class="scrollspy">
         <div class="container">
             <div class="row">
                 <div class="col s12 m10 offset-m1 l8 offset-l2">
@@ -67,13 +67,13 @@ Hvor snart alle marketingbureauer går 100% digitale, kan det analoge godt blive
         </div>
     </section>
     
-    <section id="concept">
+    <section id="concept" class="scrollspy">
         <h2>
             Næsten 300 tusinde solgte pizzaer dagligt i Danmark
         </h2>
     </section>
 
-    <section id="concept--content">
+    <section id="concept--content" class="scrollspy">
         <div class="container">
             <div class="row">
                 <div class="col s12 m10 offset-m1 l8 offset-l2">
@@ -123,10 +123,10 @@ Herefter kommer bakkerne i tryk og bliver leveret ud til pizzariaerne.
             <br><br><br>
             <div class="row">
                 <div class="col s12 m10 offset-m1 l8 offset-l2">
-                    <a class="btn btn-large light-blue hoverable hide-on-med-and-down">
+                    <a href="#contact" class="btn btn-large light-blue hoverable hide-on-med-and-down">
                        HØR MERE OM DINE MULIGHEDER - Kontakt os i dag 
                     </a>
-                    <a class="btn btn-large light-blue hoverable hide-on-large-only">
+                    <a href="#contact" class="btn btn-large light-blue hoverable hide-on-large-only">
                        HØR MERE OM DINE MULIGHEDER
                     </a>
                 </div>
@@ -134,7 +134,7 @@ Herefter kommer bakkerne i tryk og bliver leveret ud til pizzariaerne.
         </div>
     </section>
     
-    <section id="delevery">
+    <section id="delevery" class="scrollspy">
         
         <video muted autoplay loop height="400px">
             <source src="assets/img/adwito-koncept-delevery.mp4" type="video/mp4">
@@ -150,7 +150,7 @@ Herefter kommer bakkerne i tryk og bliver leveret ud til pizzariaerne.
         </h2>
     </section>
     
-    <section id="delevery--content">
+    <section id="delevery--content" class="scrollspy">
         <div class="container">
             <div class="row">
                 <div class="col s12 m10 offset-m1 l8 offset-l2">
@@ -164,7 +164,7 @@ På denne måde skal du kun koncentere dig om budskabet. Vi levere og eksekvere 
 <br><br>
 Har du et budskab du vil ud med? Eller kunne du bare tænke dig at høre nærmere? 
 <br><br>
-<b style="font-size:2em;" id="contact">Gi' os et kald i dag på 20 93 21 97</b>
+<b style="font-size:2em;" id="contact" class="scrollspy">Gi' os et kald i dag på 20 93 21 97</b>
 <b style="font-size:2em;">Eller skriv os en mail på mail@adwito.dk</b>
                     </p>
                 </div>
@@ -297,7 +297,9 @@ Mangler du et bureau der kan få dit budskab ud? Er du måske kørt træt på de
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
-  
+  $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  }); 
 </script>
 </body>
 </html>
